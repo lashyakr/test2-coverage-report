@@ -1,0 +1,11 @@
+rspec:
+  stage: test
+  script:
+    - gem install bundler
+    - bundle install
+    - bundle exec rspec
+    - mv coverage/coverage.xml coverage/cobertura-coverage.xml
+  artifacts:
+    expire_in: 100 yrs
+    reports:
+      cobertura: coverage/cobertura-coverage.xml
