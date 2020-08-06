@@ -5,6 +5,7 @@ rspec:
     - bundle install
     - bundle exec rspec
     - mv coverage/coverage.xml coverage/cobertura-coverage.xml
+    - cat coverage/cobertura-coverage.xml
   artifacts:
     expire_in: 100 yrs
     reports:
