@@ -6,6 +6,6 @@ rspec:
     - bundle exec rspec
     - mv coverage/coverage.xml coverage/cobertura-coverage.xml
   artifacts:
-    expire_in: 100 yrs
+    expire_in: never
     reports:
       cobertura: coverage/cobertura-coverage.xml
