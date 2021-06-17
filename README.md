@@ -18,8 +18,8 @@ This demo implementation uses Ruby.
 
 There are two sample merge requests that show the feature in action:
 
-- [Merge request #1](https://gitlab.com/gitlab-org/ci-cd/demos/coverage-report/-/merge_requests/1/diffs) shows a code submission **with** code coverage.
-- [Merge request #2](https://gitlab.com/gitlab-org/ci-cd/demos/coverage-report/-/merge_requests/2/diffs) shows a code submission **without** code coverage.
+- [Merge request #1](https://gitlab.com/gitlab-org/ci-sample-projects/coverage-report/-/merge_requests/1/diffs) shows a code submission **with** code coverage.
+- [Merge request #2](https://gitlab.com/gitlab-org/ci-sample-projects/coverage-report/-/merge_requests/2/diffs) shows a code submission **without** code coverage.
 
 ---
 
