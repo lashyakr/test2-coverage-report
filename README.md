@@ -10,7 +10,6 @@ You can collect the test coverage information from your favorite testing or cove
 
 Check [.gitlab-ci.yml](/.gitlab-ci.yml) to understand how to set up the feature.
 
-<img src="https://docs.gitlab.com/ee/user/project/merge_requests/img/test_coverage_visualization_v12_9.png" alt="A merge request with test coverage information" align="center">
 
 ## Demo
 
