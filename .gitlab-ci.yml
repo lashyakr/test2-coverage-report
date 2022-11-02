@@ -5,7 +5,7 @@ rspec:
     - bundle install
     - bundle exec rspec
     - mv coverage/coverage.xml coverage/cobertura-coverage.xml
-  coverage: 'LOC\s+\(\d+\.\d+%\)\s+covered/'
+  coverage: '/LOC\s+\(\d+\.\d+%\)\s+covered/'
   artifacts:
     reports:
       coverage_report:
