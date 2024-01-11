@@ -1,16 +1,17 @@
 variables:
   TEST_VAR: "test variables"
 
-rspec:
-  stage: test
+stages:
+  - install
+
+install_node:
+  stage: install
+  image: node:latest
   script:
-    - gem install bundler
-    - bundle install
-    - bundle exec rspec
-    - mv coverage/coverage.xml coverage/cobertura-coverage.xml
+    - node --version
+    - npm --version
     - echo "Testing variable $TEST_VAR"
   artifacts:
-    reports:
-      coverage_report:
-        coverage_format: cobertura
-        path: coverage/cobertura-coverage.xml
+    paths:
+      - node_version.txt
+      - npm_version.txt
