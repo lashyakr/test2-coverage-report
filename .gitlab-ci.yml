@@ -1,3 +1,6 @@
+variables:
+  TEST_VAR: "test variables"
+
 rspec:
   stage: test
   script:
@@ -5,6 +8,7 @@ rspec:
     - bundle install
     - bundle exec rspec
     - mv coverage/coverage.xml coverage/cobertura-coverage.xml
+    - echo "Testing variable $TEST_VAR"
   artifacts:
     reports:
       coverage_report:
